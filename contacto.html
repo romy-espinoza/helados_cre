@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+
+            }
+            input[type=text], input [type=email], select{
+                background: white; /*fondo blanco*/ 
+                height: 50px; /*altura*/
+                border-radius: 6px; /*borde redondeado*/
+                border: 1px solid #777; /*color del borde*/
+                margin-bottom: 15px;
+            }
+            form{ 
+                display: flex;
+                flex-direction: column;
+            }
+            label{
+                font-weight: bold;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Ingrese su nombre" />
+
+            <label for="apellido">Apellidos</label>
+            <input type="text" id="apellido" placeholder="Ingrese sus apellidos" />
+
+            <label for="correo electronico">Correo electronico</label>
+            <input type="email" id="correo electronico" placeholder="Ingrese su correo" />
+
+            <label for="servicio">Seleccione el servicio</label>
+            <select id="servicios">
+                <option value="1">Preparados de chocolate</option>
+                <option value="2">Preparados de frambuesa</option>
+                <option value="3">Preparados de mora</option>
+            </select>
+
+            <label for="mensaje">Información extra</label>
+            <textarea id="mensaje">Ingrese texto</textarea>
+
+            <label>Pago al contado <input type="radio" value="cont" name="Tipo pago"></label>
+            <label>Pago con tarjeta <input type="radio" value="tar" name="Tipo pago"></label>
+        </form>
+    </body>
+
+</html>
